@@ -10,13 +10,15 @@
 **                  d
 *********************************************************************/
 #include <iostream>
+
+
 using std::cout;
 using std::endl;
 
 int main() {
     const char* input; //Note: char by default initializes to '\0'
     if(args[1] != 0) {
-        cout << "1st passed arguement: '" << args[1] << "'" << endl;
+        cout << "1st passed argument: '" << args[1] << "'" << endl;
         input = args[1];
     }
     int n= atoi(input);
