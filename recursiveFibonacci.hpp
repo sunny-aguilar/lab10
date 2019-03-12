@@ -11,14 +11,14 @@
 #define RECURSIVEFIBONACCI_HPP
 
 class FibonacciR {
-public:
-    FibonacciR(const int &n);
-    virtual ~FibonacciR();
-    void PrintFibonacci();
 private:
     FibonacciR();
     int Fibonacci(const int &n);
     const int *n_;
+public:
+    FibonacciR(const int &n);
+    virtual ~FibonacciR();
+    void PrintFibonacci();
 };
 
 #endif // RECURSIVEFIBONACCI_HPP
