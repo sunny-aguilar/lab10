@@ -12,9 +12,9 @@
 
 class FibonacciR {
 public:
-    13     FibonacciR(const int &n);
-    14     virtual ~FibonacciR();
-    15     void PrintFibonacci();
+    FibonacciR(const int &n);
+    virtual ~FibonacciR();
+    void PrintFibonacci();
 private:
     17     FibonacciR();
     18     int Fibonacci(const int &n);
