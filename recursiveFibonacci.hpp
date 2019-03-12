@@ -22,4 +22,3 @@ public:
 };
 
 #endif // RECURSIVEFIBONACCI_HPP
-git commit -am "lab10"
