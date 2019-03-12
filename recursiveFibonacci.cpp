@@ -29,6 +29,5 @@ int FibonacciR::Fibonacci(const int &n){
 
 void FibonacciR::PrintFibonacci() {
     int FibonaciNum=Fibonacci(*n_);
-    cout<<*n_<<"th fibonaci number: "<<FibonaciNum<<std::endl;
-
-    30  }
+    cout << *n_ << "the fibonaci number: " << FibonaciNum << endl;
+}
