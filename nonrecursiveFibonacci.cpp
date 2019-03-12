@@ -37,5 +37,5 @@ int FibonacciNR::Fibonacci(const int &n) {
 
 void FibonacciNR::PrintFibonacci() {
     const int result = Fibonacci(*n_);
-    cout << *n_ << "th fibonacci Number:" << result << endl;
+    cout << *n_ << "the fibonacci Number:" << result << endl;
 }
