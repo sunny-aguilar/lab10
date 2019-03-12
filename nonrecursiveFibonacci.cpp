@@ -1,11 +1,8 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            March 11, 2019
-** Description:     D
-**                  D
-**                  d
-**                  d
-**                  d
+** Description:     This class implements iteration to find the Nth
+**                  fibonacci value.
 *********************************************************************/
 #include "nonrecursiveFibonacci.hpp"
 #include <iostream>

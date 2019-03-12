@@ -1,10 +1,8 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            March 11, 2019
-** Description:     D
-**                  D
-**                  d
-**                  d
+** Description:     This class implements an algorithm that uses
+**                  recursion to find the Nth fibonacci number.
 *********************************************************************/
 #include "recursiveFibonacci.hpp"
 
