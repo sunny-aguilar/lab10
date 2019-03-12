@@ -24,5 +24,5 @@ public:
     virtual ~FibonacciNR();
     void PrintFibonacci();
 };
-git commit -am "lab10"
+
 #endif // NONRECURSIVEFIBONACCI_HPP

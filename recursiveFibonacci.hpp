@@ -10,6 +10,10 @@
 #ifndef RECURSIVEFIBONACCI_HPP
 #define RECURSIVEFIBONACCI_HPP
 
+#include <iostream>
+using std::cout;
+using std::endl;
+
 class FibonacciR {
 private:
     FibonacciR();
