@@ -22,9 +22,9 @@ int FibonacciNR::Fibonacci(const int &n) {
     int counter = 2;
 
     while(counter < n) {
-        int temp=second;
-        second=first+second;
-        first=temp;
+        int temp = second;
+        second = first + second;
+        first = temp;
         ++counter;
     }
     if(n == 0) {
