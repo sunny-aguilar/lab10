@@ -1,11 +1,12 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            March 11, 2019
-** Description:     D
-**                  D
-**                  d
-**                  d
-**                  d
+** Description:     Lab 10 implements two algorithms in finding the
+**                  nth fibonacci number. The first algorithm uses
+**                  recursion to get to the solution while the 2nd
+**                  algorithm uses iteration. Both algorithms were
+**                  obtained online at https://www.codeproject.com/
+ *                  tips/109443/fibonacci-recursive-and-non-recursive-c
 *********************************************************************/
 #include "recursiveFibonacci.hpp"
 #include "nonrecursiveFibonacci.hpp"
@@ -16,7 +17,7 @@
 using std::fixed;
 
 int main() {
-    int N = 40;
+    int N = 50;
 
     // Using time point and system_clock
     std::chrono::time_point<std::chrono::system_clock> start, end;
@@ -33,7 +34,7 @@ int main() {
     std::chrono::duration<double> elapsed_seconds = end - start;
     std::time_t end_time = std::chrono::system_clock::to_time_t(end);
 
-    std::cout << "elapsed time: " << elapsed_seconds.count() << "s\n";
+    std::cout << "elapsed time: " << fixed << elapsed_seconds.count() << "s\n";
 
 
 
