@@ -19,6 +19,7 @@ private:
     FibonacciR();
     int Fibonacci(const int &n);
     const int *n_;
+
 public:
     FibonacciR(const int &n);
     virtual ~FibonacciR();
