@@ -24,8 +24,8 @@ int FibonacciNR::Fibonacci(const int &n) {
         int temp=second;
         second=first+second;
         first=temp;
-32         ++counter;
-33     }
+        ++counter;
+    }
 34     if(n==0)
 35         return 0;
 36     else
