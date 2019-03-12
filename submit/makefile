@@ -12,35 +12,36 @@ CXXFLAGS += -g
 CXXFLAGS += -std=c++0x
 
 OBJECTS = main.o
-OBJECTS += menu.o
-OBJECTS += stackQueue.o
+OBJECTS += recursiveFibonacci.o
+OBJECTS += nonrecursiveFibonacci.o
 
 HPPs = menu.hpp
-HPPs += stackQueue.hpp
+HPPs += recursiveFibonacci.hpp
+HPPs += nonrecursiveFibonacci.hpp
 
 CPPs = main.cpp
-CPPs += menu.cpp
-CPPs += stackQueue.cpp
+CPPs += recursiveFibonacci.cpp
+CPPs += nonrecursiveFibonacci.cpp
 
 
 # Targets needed to bring the executable up to date
 STL: $(OBJECTS)
-	$(CXX) $(CXXFLAGS) -o STL $(OBJECTS)
+	$(CXX) $(CXXFLAGS) -o Lab10 $(OBJECTS)
 
 main.o: main.cpp $(HPPs)
 	$(CXX) $(CXXFLAGS) -c main.cpp
 
-menu.o: menu.hpp
+recursiveFibonacci.o: recursiveFibonacci.hpp
 
-stackQueue.o: stackQueue.hpp
+nonrecursiveFibonacci.o: nonrecursiveFibonacci.hpp
 
 
 # Clean-up operations
 clean:
-	rm STL *.o
+	rm Lab10 *.o
 
 debug:
-	valgrind -v --leak-check=full --show-leak-kinds=all --track-origins=yes ./STL
+	valgrind -v --leak-check=full --show-leak-kinds=all --track-origins=yes ./Lab10
 
 zip:
-	zip -D Lab9_Aguilar_Sandro.zip $(CPPs) $(HPPs) $(TXTS) makefile *.txt *.pdf
+	zip -D Lab10_Aguilar_Sandro.zip $(CPPs) $(HPPs) $(TXTS) makefile *.txt *.pdf
