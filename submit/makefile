@@ -1,7 +1,7 @@
 # File: 	makefile
 # Author: 	Sandro Aguilar
-# Date: 	March 4, 2019
-# Description:	Makefile for Lab 9
+# Date: 	March 11, 2019
+# Description:	Makefile for Lab 10
 
 # Variables to control Makefile operation
 
