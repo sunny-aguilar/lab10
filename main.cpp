@@ -10,28 +10,51 @@
 #include "recursiveFibonacci.hpp"
 #include "nonrecursiveFibonacci.hpp"
 #include <cstdlib>
+#include <chrono>
+#include <ctime>
+#include <iomanip>
+using std::fixed;
 
-int main(int argc, char** args) {
-    const char* input; //Note: char by default initializes to '\0'
-    if(args[1] != nullptr) {
-        cout << "1st passed argument: '" << args[1] << "'" << endl;
-        input = args[1];
-    }
+int main() {
+    int N = 40;
 
-    int n = atoi(input);        // converts string to integer
+    // Using time point and system_clock
+    std::chrono::time_point<std::chrono::system_clock> start, end;
 
-    cout << "Finding '" << n << "'th " << "fibonacci number...." << endl;
+    // calculating fibonacci using recursion
+    cout << "Finding '" << N << "'th " << "fibonacci number...." << endl << endl;
     cout << "Calling Recursive Fibonacci implementation" << endl;
 
-    FibonacciR fr(n);
+    start = std::chrono::system_clock::now();
+    FibonacciR fr(N);
     fr.PrintFibonacci();
+    end = std::chrono::system_clock::now();
 
-    cout << "Calling Non-Recursive Fibonacci implementation" << endl;
+    std::chrono::duration<double> elapsed_seconds = end - start;
+    std::time_t end_time = std::chrono::system_clock::to_time_t(end);
 
-    FibonacciNR fnr(n);
+    std::cout << "elapsed time: " << elapsed_seconds.count() << "s\n";
+
+
+
+    // calculating fibonacci using iteration
+    cout << "\nCalling Non-Recursive Fibonacci implementation" << endl;
+
+    // Using time point and system_clock
+    std::chrono::time_point<std::chrono::system_clock> start2, end2;
+
+    start2 = std::chrono::system_clock::now();
+    FibonacciNR fnr(N);
     fnr.PrintFibonacci();
+    end2 = std::chrono::system_clock::now();
 
-    cout << "Done!!!!" << endl;
+    std::chrono::duration<double> elapsed_seconds2 = end2 - start2;
+    std::time_t end_time2 = std::chrono::system_clock::to_time_t(end2);
+
+    std::cout << "elapsed time: " << fixed << elapsed_seconds2.count() << "s\n";
+
+
+    cout << "\nDone!!!!" << endl;
 
     return 0;
 }
