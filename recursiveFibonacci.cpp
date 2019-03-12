@@ -9,11 +9,11 @@
 *********************************************************************/
 #include "recursiveFibonacci.hpp"
 #include <iostream>
-git commit -am "lab10"
+
 
 FibonacciR::FibonacciR() {}
 
-FibonacciR::FibonacciR(const int &n):n_(&n) { }
+FibonacciR::FibonacciR(const int &n) : n_(&n) { }
 
 FibonacciR::~FibonacciR() {}
 
@@ -29,5 +29,5 @@ int FibonacciR::Fibonacci(const int &n){
 
 void FibonacciR::PrintFibonacci() {
     int FibonacciNum=Fibonacci(*n_);
-    cout << *n_ << "the fibonaci number: " << FibonacciNum << endl;
+    cout << *n_ << "the fibonacci number: " << FibonacciNum << endl;
 }
