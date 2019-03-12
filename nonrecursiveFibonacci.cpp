@@ -26,12 +26,13 @@ int FibonacciNR::Fibonacci(const int &n) {
         first=temp;
         ++counter;
     }
-34     if(n==0)
-35         return 0;
-36     else
-37         return first+second;
-38  }
-39  void FibonacciNR::PrintFibonacci(){
+    if(n==0) {
+        return 0;
+    }
+    else {
+        return first+second;
+    }
+    void FibonacciNR::PrintFibonacci(){
     40     const int result = Fibonacci(*n_);
     41     std::cout<<*n_<<"th fibonacci Number:"<<result<<std::endl;
     42  }
