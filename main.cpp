@@ -6,7 +6,8 @@
 **                  recursion to get to the solution while the 2nd
 **                  algorithm uses iteration. Both algorithms were
 **                  obtained online at https://www.codeproject.com/
- *                  tips/109443/fibonacci-recursive-and-non-recursive-c
+**                  tips/109443/fibonacci-recursive-and-non-recursive-c
+**                  Chrono header is used for a better time resolution.
 *********************************************************************/
 #include "recursiveFibonacci.hpp"
 #include "nonrecursiveFibonacci.hpp"
