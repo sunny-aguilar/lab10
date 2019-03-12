@@ -30,7 +30,7 @@ int FibonacciNR::Fibonacci(const int &n) {
         return 0;
     }
     else {
-        return first+second;
+        return first + second;
     }
 }
 
@@ -38,4 +38,3 @@ void FibonacciNR::PrintFibonacci() {
     const int result = Fibonacci(*n_);
     cout << *n_<< "th fibonacci Number:" << result << endl;
 }
-git commit -am "lab10"
