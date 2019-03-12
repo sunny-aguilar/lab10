@@ -15,20 +15,19 @@ using std::endl;
 
 int main() {
     const char* input; //Note: char by default initializes to '\0'
-    if(args[1]!=0) {
-        cout<<"1st passed arguement: '"<<args[1]<<"'"<<endl;
-        26             input= args[1];
-        27         }
-    28         int n= atoi(input);
-    29         cout<<"Finding '"<<n<<"'th "<<"fibonacci number...."<<endl;
-    30         cout<<"Calling Recursive Fibonacci implementation"<<endl;
-    31         FibonacciR fr(n);
-    32         fr.PrintFibonacci();
-    33         cout<<"Calling Non-Recursive Fibonacci implementation"<<endl;
-    34         FibonacciNR fnr(n);
-    35         fnr.PrintFibonacci();
-    36         cout << "Done!!!!" << endl;
-
+    if(args[1] != 0) {
+        cout << "1st passed arguement: '" << args[1] << "'" << endl;
+        input = args[1];
+    }
+    int n= atoi(input);
+    cout << "Finding '" << n << "'th " << "fibonacci number...." << endl;
+    cout << "Calling Recursive Fibonacci implementation" << endl;
+    FibonacciR fr(n);
+    fr.PrintFibonacci();
+    cout << "Calling Non-Recursive Fibonacci implementation" << endl;
+    FibonacciNR fnr(n);
+    fnr.PrintFibonacci();
+    cout << "Done!!!!" << endl;
 
     return 0;
 }
