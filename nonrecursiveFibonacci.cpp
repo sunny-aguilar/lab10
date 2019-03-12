@@ -11,7 +11,7 @@
 #include <iostream>
 
 FibonacciNR::FibonacciNR() {}
-git commit -am "lab10"
+
 FibonacciNR::FibonacciNR(const int &n):n_(&n) {}
 
 FibonacciNR::~FibonacciNR() {}
@@ -32,7 +32,10 @@ int FibonacciNR::Fibonacci(const int &n) {
     else {
         return first+second;
     }
-    void FibonacciNR::PrintFibonacci(){
-    40     const int result = Fibonacci(*n_);
-    41     std::cout<<*n_<<"th fibonacci Number:"<<result<<std::endl;
-    42  }
+}
+
+void FibonacciNR::PrintFibonacci() {
+    const int result = Fibonacci(*n_);
+    std::cout<<*n_<<"th fibonacci Number:"<<result<<std::endl;
+}
+git commit -am "lab10"
