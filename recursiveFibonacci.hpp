@@ -1,8 +1,8 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            March 11, 2019
-** Description:     This algorithm implements a recursion to find the
-**                  Nth fibonacci number.
+** Description:     This class implements an algorithm that uses
+**                  recursion to find the Nth fibonacci number.
 *********************************************************************/
 #ifndef RECURSIVEFIBONACCI_HPP
 #define RECURSIVEFIBONACCI_HPP
