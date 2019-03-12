@@ -17,10 +17,10 @@ FibonacciNR::FibonacciNR(const int &n):n_(&n) {}
 FibonacciNR::~FibonacciNR() {}
 
 int FibonacciNR::Fibonacci(const int &n) {
-24     int first = 0;
-25     int second = 1;
-26     int counter = 2;
-27     while(counter < n)
+    int first = 0;
+    int second = 1;
+    counter = 2;
+    while(counter < n)
 28     {
 29         int temp=second;
 30         second=first+second;
