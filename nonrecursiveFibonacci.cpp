@@ -20,6 +20,7 @@ int FibonacciNR::Fibonacci(const int &n) {
     int first = 0;
     int second = 1;
     int counter = 2;
+
     while(counter < n) {
         int temp=second;
         second=first+second;

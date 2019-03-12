@@ -25,7 +25,7 @@ CPPs += nonrecursiveFibonacci.cpp
 
 
 # Targets needed to bring the executable up to date
-STL: $(OBJECTS)
+Lab10: $(OBJECTS)
 	$(CXX) $(CXXFLAGS) -o Lab10 $(OBJECTS)
 
 main.o: main.cpp $(HPPs)
