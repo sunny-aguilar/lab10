@@ -11,17 +11,15 @@
 #include <iostream>
 
 FibonacciNR::FibonacciNR() {}
-
+git commit -am "lab10"
 FibonacciNR::FibonacciNR(const int &n):n_(&n) {}
 
-19  FibonacciNR::~FibonacciNR() {
-    20  }
-21
-22  int FibonacciNR::Fibonacci(const int &n)
-23  {
-24     int first =0;
-25     int second=1;
-26     int counter=2;
+FibonacciNR::~FibonacciNR() {}
+
+int FibonacciNR::Fibonacci(const int &n) {
+24     int first = 0;
+25     int second = 1;
+26     int counter = 2;
 27     while(counter < n)
 28     {
 29         int temp=second;
