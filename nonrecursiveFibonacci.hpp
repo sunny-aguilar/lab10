@@ -10,6 +10,10 @@
 #ifndef NONRECURSIVEFIBONACCI_HPP
 #define NONRECURSIVEFIBONACCI_HPP
 
+#include <iostream>
+using std::cout;
+using std::endl;
+
 class FibonacciNR {
 private:
     FibonacciNR();
