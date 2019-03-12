@@ -16,9 +16,9 @@ public:
     virtual ~FibonacciR();
     void PrintFibonacci();
 private:
-    17     FibonacciR();
-    18     int Fibonacci(const int &n);
-    19     const int *n_;
+    FibonacciR();
+    int Fibonacci(const int &n);
+    const int *n_;
 };
 
 #endif // RECURSIVEFIBONACCI_HPP
