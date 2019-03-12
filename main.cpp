@@ -1,10 +1,8 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            March 11, 2019
-** Description:     The Game class controls all of the game operations
-**                  required to control the game.
-**                  d
-**                  d
+** Description:     D
+**                  D
 **                  d
 **                  d
 **                  d
