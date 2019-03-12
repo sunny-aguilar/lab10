@@ -18,7 +18,7 @@ int main(int argc, char** args) {
         input = args[1];
     }
 
-    int n = atoi(input);
+    int n = atoi(input);        // converts string to integer
 
     cout << "Finding '" << n << "'th " << "fibonacci number...." << endl;
     cout << "Calling Recursive Fibonacci implementation" << endl;

@@ -5,7 +5,6 @@
 **                  D
 **                  d
 **                  d
-**                  d
 *********************************************************************/
 #include "recursiveFibonacci.hpp"
 
@@ -26,6 +25,6 @@ int FibonacciR::Fibonacci(const int &n){
 }
 
 void FibonacciR::PrintFibonacci() {
-    int FibonacciNum=Fibonacci(*n_);
+    int FibonacciNum = Fibonacci(*n_);
     cout << *n_ << "the fibonacci number: " << FibonacciNum << endl;
 }
