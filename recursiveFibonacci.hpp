@@ -1,11 +1,8 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            March 11, 2019
-** Description:     D
-**                  D
-**                  d
-**                  d
-**                  d
+** Description:     This algorithm implements a recursion to find the
+**                  Nth fibonacci number.
 *********************************************************************/
 #ifndef RECURSIVEFIBONACCI_HPP
 #define RECURSIVEFIBONACCI_HPP
