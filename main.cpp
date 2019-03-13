@@ -35,7 +35,7 @@ int main() {
     std::chrono::duration<double> elapsed_seconds = end - start;
     std::time_t end_time = std::chrono::system_clock::to_time_t(end);
 
-    std::cout << "elapsed time: " << fixed << elapsed_seconds.count() << "s\n";
+    std::cout << ">> elapsed time: " << fixed << elapsed_seconds.count() << "s\n";
 
 
 
@@ -53,7 +53,7 @@ int main() {
     std::chrono::duration<double> elapsed_seconds2 = end2 - start2;
     std::time_t end_time2 = std::chrono::system_clock::to_time_t(end2);
 
-    std::cout << "elapsed time: " << fixed << elapsed_seconds2.count() << "s\n";
+    std::cout << ">> elapsed time: " << fixed << elapsed_seconds2.count() << "s\n";
 
 
     cout << "\nDone!!!!" << endl;
