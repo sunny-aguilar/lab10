@@ -2,7 +2,7 @@
 ** Author:          Sandro Aguilar
 ** Date:            March 11, 2019
 ** Description:     This class implements iteration to find the Nth
-**                  fibonacci value.
+**                  fibonacci value using iteration.
 *********************************************************************/
 #ifndef NONRECURSIVEFIBONACCI_HPP
 #define NONRECURSIVEFIBONACCI_HPP
