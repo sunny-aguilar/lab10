@@ -18,7 +18,7 @@
 using std::fixed;
 
 int main() {
-    int N = 50;
+    int N = 40;
 
     // Using time point and system_clock
     std::chrono::time_point<std::chrono::system_clock> start, end;
