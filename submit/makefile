@@ -15,8 +15,7 @@ OBJECTS = main.o
 OBJECTS += recursiveFibonacci.o
 OBJECTS += nonrecursiveFibonacci.o
 
-HPPs = menu.hpp
-HPPs += recursiveFibonacci.hpp
+HPPs = recursiveFibonacci.hpp
 HPPs += nonrecursiveFibonacci.hpp
 
 CPPs = main.cpp
