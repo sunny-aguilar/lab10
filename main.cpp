@@ -18,7 +18,10 @@
 using std::fixed;
 
 int main() {
-    int N = 40;
+    int N = 0;
+    cout << "Enter a value for N: ";
+
+    std::cin >> N;
 
     // Using time point and system_clock
     std::chrono::time_point<std::chrono::system_clock> start, end;
